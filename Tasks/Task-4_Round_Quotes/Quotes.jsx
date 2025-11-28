@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 function Quotes() {
   const [quotes, setQuotes] = useState([]);
-
   const fetchQuotes = async () => {
     try {
       const res = await axios.get("https://dummyjson.com/quotes/random/10");
@@ -41,5 +40,4 @@ function Quotes() {
     </div>
   );
 }
-
 export default Quotes;
